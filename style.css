@@ -1,0 +1,276 @@
+/*-------------variable-link-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: #FFFFFF;
+    transition: all 300ms ease-in-out;
+}
+
+.top-sec {
+    width: 100%;
+    height: auto;
+}
+
+.profile {
+    width: 100%;
+    text-align: center;
+    margin-top: 3.8vh;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.profile img.profile {
+    width: 15%;
+    border-radius: 16px;
+}
+
+.profile p.name {
+    color: #4E5150;
+    margin: 1%;
+}
+
+.profile p.address {
+    margin: 1%;
+    color: #A9A9A9;
+}
+
+.profile .contain {
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .contain div {
+    width: fit-content;
+    height: fit-content;
+    padding: 1% 2%;
+    margin: 1.5vh 1vw;
+    background: #E5E5E5;
+    border-radius: 12px;
+}
+
+.profile .contain div p:first-child {
+    text-align: center;
+    color: #4E5150;
+}
+
+.profile .contain div p:last-child {
+    text-align: center;
+    color: #bdbdbd;
+}
+
+.mid-sec .contain img {
+    height: auto;
+    border-radius: 12px;
+}
+
+.mid-sec .contain .part-1 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 29%;
+}
+
+.mid-sec .contain .part-1 img.ph1 {
+    width: 29%;
+}
+
+.mid-sec .contain .part-1 img.ph2 {
+    width: 69%;
+}
+
+.mid-sec .contain .part-2 {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mid-sec .contain .part-2 .box1 {
+    width: 69%;
+    margin: 1vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mid-sec .contain .part-2 .box1 img.item1 {
+    width: 100%;
+    height: 49%;
+}
+
+.mid-sec .contain .part-2 .item2 {
+    width: 100%;
+    height: 49%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mid-sec .contain .part-2 .item2 img {
+    width: 49%;
+}
+
+.mid-sec .contain .part-2 .box2 {
+    width: 29%;
+    margin: 1vh 0;
+}
+
+.mid-sec .contain .part-2 .box2 img {
+    width: 100%;
+    height: 100%;
+}
+
+/*----------desktop-view------------*/
+@media only screen and (min-width:768px) {
+    .profile img.profile {
+        min-width: 217px;
+    }
+
+    .profile p.name {
+        font-size: 1.5em;
+    }
+
+    .profile .contain div p:first-child {
+        font-size: 1.2em;
+    }
+
+    .profile p.address,
+    .profile .contain div p:first-child {
+        font-size: 0.9em;
+    }
+
+    .mid-sec {
+        width: 90%;
+        margin: 10vh auto;
+    }
+
+    .mid-sec .contain {
+        width: 90%;
+        margin: 2vh auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
+
+/*----------desktop-view------------*/
+/*----------mobile-view------------*/
+
+@media only screen and (max-width:768px) {
+    .profile img.profile {
+        min-width: 141px;
+    }
+
+    .profile p.name {
+        font-size: 0.9em;
+    }
+
+    .profile p.address {
+        font-size: 0.7em;
+    }
+
+    .profile .contain div p {
+        font-size: 0.8em;
+    }
+
+    .mid-sec {
+        width: 100%;
+        margin: 10vh auto;
+    }
+
+    .mid-sec .contain {
+        width: 100%;
+        margin: 2vh auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mid-sec .contain div.part-1,
+    .mid-sec .contain div.part-2 {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    footer {
+        font-size: 0.785em;
+    }
+}
+
+@media only screen and (max-width:416px) {
+    .profile img.profile {
+        min-width: 90px;
+    }
+
+    .profile p.name {
+        font-size: 0.6em;
+    }
+
+    .profile p.address,
+    .profile .contain div p {
+        font-size: 0.4em;
+        margin-top: 0.5vh;
+    }
+
+    footer {
+        font-size: 0.5em;
+    }
+}
+
+/*----------mobile-view------------*/
+
+
+/*footer design*/
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: gray;
+    padding: calc(7vh - 1.5em);
+    letter-spacing: 1px;
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a:hover {
+    background-image: linear-gradient(45deg, #f0af, #33ff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+footer a:visited {
+    color: gray;
+}
+
+/*footer design*/
